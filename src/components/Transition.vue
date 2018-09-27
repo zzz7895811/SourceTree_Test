@@ -1,7 +1,6 @@
 <template>
     <div>
-        <el-button @click="show = !show">µã»÷</el-button>
-
+        <el-button @click="show = !show" type="primary" round>éšè—</el-button>
         <div style="display: flex; margin-top: 20px; height: 100px;">
             <transition name="el-fade-in-linear">
                 <div v-show="show" class="transition-box">.el-fade-in-linear</div>
@@ -33,7 +32,7 @@
         },
         methods:{
             rateClick(num) {
-                console.log("´ò·Ö:"+num)
+                console.log("ï¿½ï¿½ï¿½:"+num)
 
             }
         }

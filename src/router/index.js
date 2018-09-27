@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Transition1 from '@/components/Transition'
 import Rate from '../../user_components/Rate'
 import DatePick from '../../user_components/DatePick'
+import Radio from '../../user_components/Radio'
 
 Vue.use(Router)
 
@@ -26,6 +27,10 @@ export default new Router({
           path: '/DatePick',
           name: 'DatePick',
           component: DatePick
-      }
+      } ,{
+      path: '/Radio',
+      name: 'Radio',
+      component: Radio
+    }
   ]
 })
