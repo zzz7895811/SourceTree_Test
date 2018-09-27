@@ -1,7 +1,7 @@
 <template>
     <div>
     <div>
-        时间选择1234:
+        时间选择123456:
         <el-date-picker
                 :picker-options="pickerOptions1"
                 v-model="value1"
