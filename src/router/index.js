@@ -5,6 +5,8 @@ import Transition1 from '@/components/Transition'
 import Rate from '../../user_components/Rate'
 import DatePick from '../../user_components/DatePick'
 import Radio from '../../user_components/Radio'
+import Checkbox from '../../user_components/CheckBox'
+import Input from '../../user_components/Input'
 
 Vue.use(Router)
 
@@ -31,6 +33,14 @@ export default new Router({
       path: '/Radio',
       name: 'Radio',
       component: Radio
+    },{
+      path: '/Checkbox',
+      name: 'Checkbox',
+      component: Checkbox
+    },{
+      path: '/Input',
+      name: 'Input',
+      component: Input
     }
   ]
 })
