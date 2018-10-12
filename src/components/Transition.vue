@@ -32,7 +32,7 @@
         },
         methods:{
             rateClick(num) {
-                console.log("���:"+num)
+                console.log("RATE:"+num)
 
             }
         }

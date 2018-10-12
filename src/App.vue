@@ -9,7 +9,10 @@
   import eleUI from 'element-ui'
   import 'element-ui/lib/theme-chalk/index.css';
   import Vue from 'vue'
+  import elementUIVerify from 'element-ui-verify'
   Vue.use(eleUI);
+  Vue.use(elementUIVerify)
+
 export default {
   name: 'App'
 }

@@ -7,7 +7,8 @@ import DatePick from '../../user_components/DatePick'
 import Radio from '../../user_components/Radio'
 import Checkbox from '../../user_components/CheckBox'
 import Input from '../../user_components/Input'
-
+import Validate from '../../user_components/Validate'
+import UiVerify from '../../user_components/Ui-Verify'
 Vue.use(Router)
 
 export default new Router({
@@ -41,6 +42,14 @@ export default new Router({
       path: '/Input',
       name: 'Input',
       component: Input
+    },{
+      path: '/Validate',
+      name: 'Validate',
+      component: Validate
+    },{
+      path: '/UiVerify',
+      name: 'UiVerify',
+      component: UiVerify
     }
   ]
 })
