@@ -17,7 +17,7 @@
    return  this.value.length>0;
   }
   var user=new field("username");
-  console.log(user.valid())
+  // console.log(user.valid())
   const cityOptions = [
     {
       id: 1,

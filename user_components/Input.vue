@@ -8,7 +8,7 @@
     <span>斐波那契:{{fibsNum}}</span>
     <p></p>
     <span>{{fibsSum}}</span>
-    <el-input v-model="input2"  v-validate="'required|email'" type="text" name="Email1" >
+    <el-input v-model="input2"  type="text" name="Email1" >
 
     </el-input>
   </div>

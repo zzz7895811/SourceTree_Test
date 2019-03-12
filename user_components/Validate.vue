@@ -1,13 +1,59 @@
 <template>
   <div>
-    <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-      <el-form-item label="活动名称" prop="name">
-        <el-input v-model="ruleForm.name"></el-input>
-      </el-form-item>
-      <el-form-item label="年龄" prop="age">
-        <el-input type="text" v-model="ruleForm.age" autocomplete="off"></el-input>
-      </el-form-item>
-    </el-form>
+    <!--<el-form :model="ruleForm" :rules="rules" label-width="100px" class="demo-ruleForm">-->
+      <el-col :span="12">
+        <el-form-item label="活动名称" prop="name2">
+          <el-input v-model="ruleForm.name"></el-input>
+        </el-form-item>
+      </el-col>
+
+      <el-col :span="12">
+        <el-form-item label="年龄" prop="age">
+          <el-input type="text" v-model="ruleForm.age" autocomplete="off"></el-input>
+        </el-form-item>
+      </el-col>
+      <el-col :span="12">
+        <el-form-item label="活动名称" prop="name2">
+          <el-input v-model="ruleForm.name"></el-input>
+        </el-form-item>
+      </el-col>
+
+      <el-col :span="12">
+        <el-form-item label="年龄" prop="age">
+          <el-input type="text" v-model="ruleForm.age" autocomplete="off"></el-input>
+        </el-form-item>
+      </el-col>
+      <el-col :span="12">
+        <el-form-item label="时间范围">
+          <el-date-picker
+            v-model="value4"
+            :default-time="dTime"
+            type="datetimerange"
+            range-separator="至"
+            start-placeholder="开始日期"
+            end-placeholder="结束日期">
+          </el-date-picker>
+        </el-form-item>
+      </el-col>
+
+      <el-col :span="12">
+        <el-form-item label="年龄" prop="age">
+          <el-input type="text" v-model="ruleForm.age" autocomplete="off"></el-input>
+        </el-form-item>
+      </el-col>
+      <el-col :span="12">
+        <el-form-item label="活动名称" prop="name2">
+          <el-input v-model="ruleForm.name"></el-input>
+        </el-form-item>
+      </el-col>
+
+      <el-col :span="12">
+        <el-form-item label="年龄" prop="age">
+          <el-input type="text" v-model="ruleForm.age" autocomplete="off"></el-input>
+        </el-form-item>
+      </el-col>
+
+    <!--</el-form>-->
   </div>
 </template>
 
@@ -33,17 +79,22 @@
 
       };
       return {
+        value4:"",
+        //value4:['2018-11-30 15:38:00','2018-11-30 16:38:00'],
+        dTime:["9:00:00","10:00:00"],
+        name: '',
+        age: '',
         ruleForm: {
           name: '',
           age: ''
         },
         rules: {
-          name: [
+          name2: [
             {required: true, message: '请输入活动名称', trigger: 'blur'},
             {min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur'}
           ],
           age: [
-            {validator: checkAge, trigger: 'blur'}
+            {required: true,validator: checkAge, trigger: 'blur'}
           ]
         }
       }

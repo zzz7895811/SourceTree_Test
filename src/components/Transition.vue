@@ -10,7 +10,7 @@
             </transition>
         </div>
 
-        <Rate v-on:rateClickEvent="rateClick"></Rate>
+        <Rate v-on:rateClickEvent="rateClick" v-on:operClickEvent="operClick" :logo="logoMsg"></Rate>
         <Ecoding></Ecoding>
     </div>
 </template>
@@ -24,7 +24,8 @@
     export default {
         data () {
             return {
-                show: true
+                show: true,
+              logoMsg:"RATE获取参数"
             }
         },
         components: {
@@ -34,7 +35,11 @@
             rateClick(num) {
                 console.log("RATE:"+num)
 
-            }
+            },
+          operClick(typeID) {
+            console.log("operClick:"+typeID)
+
+          },
         }
     }
 </script>
